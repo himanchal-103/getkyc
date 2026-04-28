@@ -6,6 +6,6 @@ gunicorn==25.3.0
 load-dotenv==0.1.0
 packaging==26.2
 python-dotenv==1.2.2
-python-magic==0.4.27
+python-magic-bin
 sqlparse==0.5.5
 whitenoise==6.12.0

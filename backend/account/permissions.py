@@ -29,29 +29,3 @@ class IsAdmin(BasePermission):
             request.user.is_authenticated and
             request.user.role == request.user.Role.ADMIN
         )
-
-
-class IsAdminOrReviewer(BasePermission):
-    message = "Access restricted to admins and reviewers only."
-
-    def has_permission(self, request, view):
-        return (
-            request.user.is_authenticated and
-            request.user.role in [
-                request.user.Role.ADMIN,
-                request.user.Role.REVIEWER,
-            ]
-        )
-
-
-class IsAdminOrMerchant(BasePermission):
-    message = "Access restricted to admins and merchants only."
-
-    def has_permission(self, request, view):
-        return (
-            request.user.is_authenticated and
-            request.user.role in [
-                request.user.Role.ADMIN,
-                request.user.Role.MERCHANT,
-            ]
-        )
