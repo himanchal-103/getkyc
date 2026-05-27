@@ -1,8 +1,6 @@
 # getkyc
 This is a simple KYC pipeline.
 
-Deployment link: https://angelic-freedom-production-dd63.up.railway.app
-
 ## directory structure
 ```
 ├── backend
